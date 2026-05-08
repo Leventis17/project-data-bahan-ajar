@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Stok</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <div class="card">
+    <div class="btn-row">
+      <h2>Data Bahan Ajar</h2>
+      <button class="btn-red" onclick="location.href='dashboard.html'">Halaman utama</button>
+    </div>
+
+    <div id="listBuku" class="grid-buku"></div>
+  </div>
+
+  <div class="card">
+    <h3>Tambah Data</h3>
+
+  <div class="form-grid">
+    <div>
+      <input id="kode" placeholder="Kode">
+      <input id="nama" placeholder="Nama">
+      <input id="stok" placeholder="Stok">
+    </div>
+
+    <div>
+      <input id="lokasi" placeholder="Lokasi">
+      <input id="jenis" placeholder="Jenis">
+      <input type="file" id="coverFile" accept="image/*">
+    </div>
+  </div>
+
+    <div class="action-row">
+      <button type="button" onclick="tambahData()">Tambah</button>
+      <button class="btn-secondary" onclick="location.href='tracking.html'">Lanjut</button>
+    </div>
+  </div>
+
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

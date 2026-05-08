@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tracking</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="card">
+        <div class="btn-row">
+            <h2>Tracking Pengiriman</h2>
+            <button class="btn-red" onclick="location.href='dashboard.html'">Halaman utama</button>
+        </div>
+        
+        <input type="text" id="resi" placeholder="Nomor DO">
+        <div class="action-row">
+            <button onclick="cekTracking()">Cari</button>
+            <button class="btn-third" onclick="location.href='tracking.html'">Kembali</button>
+        </div>
+        <div id="hasil"></div>
+    </div>
+
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
